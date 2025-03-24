@@ -12,10 +12,10 @@ from concurrent.futures import ThreadPoolExecutor
 app = FastAPI()
 
 # Load Models
-vgg_model = load_model("./models/vgg_cnn_model.h5")  # Deep Learning Model
-asd_model = joblib.load("./models/asd_model.pkl")  # ML Model
-scaler = joblib.load("./models/scaler.pkl")
-label_encoders = joblib.load("./models/label_encoders.pkl")
+vgg_model = load_model("../models/vgg_cnn_model.h5")  # Deep Learning Model
+asd_model = joblib.load("../models/asd_model.pkl")  # ML Model
+scaler = joblib.load("../models/scaler.pkl")
+label_encoders = joblib.load("../models/label_encoders.pkl")
 print("Models loaded successfully.")
 
 
